@@ -64,9 +64,7 @@ public final class ListView extends AndroidViewComponent implements AdapterView.
   private String selection;
   private boolean showFilter = false;
   private static final boolean DEFAULT_ENABLED = false;
-  // Backing for background color
-  private int backgroundColor;
-  private static final int DEFAULT_BACKGROUND_COLOR = Component.COLOR_BLACK;
+
 
   private int backgroundColor;
   private static final int DEFAULT_BACKGROUND_COLOR = Component.COLOR_BLACK;
@@ -88,14 +86,6 @@ public final class ListView extends AndroidViewComponent implements AdapterView.
     listViewLayout = new LinearLayout(container.$context());
     listViewLayout.setOrientation(LinearLayout.VERTICAL);
 
-<<<<<<< HEAD
-    ElementsFromString("");
-    adapter = new ArrayAdapter<String>(container.$context(), android.R.layout.simple_list_item_1,
-        items.toStringArray());
-    view.setAdapter(adapter);
-
-=======
->>>>>>> b43ee14bda5a29d70459975e9da10a6a892a4dbe
     txtSearchBox = new EditText(container.$context());
     txtSearchBox.setSingleLine(true);
     txtSearchBox.setWidth(Component.LENGTH_FILL_PARENT);
