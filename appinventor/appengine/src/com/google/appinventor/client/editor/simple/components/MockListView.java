@@ -33,9 +33,6 @@ public final class MockListView extends MockVisibleComponent {
   private SimplePanel panelForItem;
   private String[] currentList;
   private boolean filterShowing = false;
-  //  Needed for background color of labelInItem
-  private String backgroundColor;
-  private String currentElements;
 
   private static final String DEFAULT_BACKGROUND_COLOR = "&HFF000000";
 
